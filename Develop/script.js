@@ -32,6 +32,7 @@ let symbol = confirm("Would you like to include special characters?");
 let number = confirm("Would you like to include numbers?");
 
 let allChars = "";
+let password = "";
 
 if (upper) {
   allChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -47,9 +48,11 @@ if (number) {
 }
 
 //generate pw that matches selected criteria
-else {
-  alert("Your password must be 8 - 128 characters!")
-}
+//create for loop to iterate over the chosen characters
+//return the generated password
+  else {
+    alert("Your password must be 8 - 128 characters!")
+  }
 
 }
 
