@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
 //@%+\\/!#$^?:,)(}{][~-_
 
 //"123456789"
-//xxxx
+
 //generate password
 function generatePassword() {
   //do stuff
@@ -18,6 +18,39 @@ function generatePassword() {
     alert(`Your new password will be ${totalLength} characters long.`);
     //(`Your new password will be` + totalLength + `characters long`)
   }
+  // var options = {
+  //   hasNumber : window.confirm(`Would you like to include a number?`),
+  //   hasUppercase : window.confirm(`Would you like to include upper case letters?`),
+  //   hasLowercase : window.confirm(`Would you like to include lower case letters?`),
+  //   hasSymbol : window.confirm(`Would you like to include a symbol?`)
+  // };
+  // if(options.hasLowercase === false && options.hasUppercase === false && options.hasNumber === false && options.hasSymbol === false)
+
+let upper = confirm("Would you like to include uppercase letters?");
+let lower = confirm("Would you like to include lowercase letters?");
+let symbol = confirm("Would you like to include special characters?");
+let number = confirm("Would you like to include numbers?");
+
+let allChars = "";
+
+if (upper) {
+  allChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+}
+if (lower) {
+  allChars += "abcdefghijklmnopqrstuvwxyz";
+}
+if (symbol) {
+  allChars += "@'%+\\/!#$^?:,)(}{][~-_";
+}
+if (number) {
+  allChars += "123456789";
+}
+
+//generate pw that matches selected criteria
+else {
+  alert("Your password must be 8 - 128 characters!")
+}
+
 }
 
 // Write password to the #password input
