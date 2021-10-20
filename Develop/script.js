@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
 //@%+\\/!#$^?:,)(}{][~-_
 
 //"123456789"
-
+//xxxx
 //generate password
 function generatePassword() {
   //do stuff
