@@ -56,10 +56,14 @@ if (number) {
   else {
     alert("Your password must be 8 - 128 characters!")
   }
-  console.log(allChars)
-
+  console.log(randomNumber(0, allChars.length))
 }
 
+function randomNumber(min, max) { 
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
