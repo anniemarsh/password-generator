@@ -26,6 +26,7 @@ function generatePassword() {
   // };
   // if(options.hasLowercase === false && options.hasUppercase === false && options.hasNumber === false && options.hasSymbol === false)
 
+ //array 
 let upper = confirm("Would you like to include uppercase letters?");
 let lower = confirm("Would you like to include lowercase letters?");
 let symbol = confirm("Would you like to include special characters?");
@@ -34,6 +35,7 @@ let number = confirm("Would you like to include numbers?");
 let allChars = "";
 let password = "";
 
+//conditional
 if (upper) {
   allChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 }
@@ -48,7 +50,8 @@ if (number) {
 }
 
 //generate pw that matches selected criteria
-//create for loop to iterate over the chosen characters
+//create loop to iterate over the chosen characters
+
 //return the generated password
   else {
     alert("Your password must be 8 - 128 characters!")
