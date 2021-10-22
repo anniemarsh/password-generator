@@ -56,6 +56,7 @@ if (number) {
   else {
     alert("Your password must be 8 - 128 characters!")
   }
+  console.log(allChars)
 
 }
 
