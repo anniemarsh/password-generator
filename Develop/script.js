@@ -1,30 +1,12 @@
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
 
-
-//"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-//"abcdefghijklmnopqrstuvwxyz"
-
-//@%+\\/!#$^?:,)(}{][~-_
-
-//"123456789"
-
 //generate password
 function generatePassword() {
-  //do stuff
   const totalLength = prompt("How many characters would you like to use?");
   if(totalLength >= 8 && totalLength <= 128) {
     alert(`Your new password will be ${totalLength} characters long.`);
-    //(`Your new password will be` + totalLength + `characters long`)
   }
-  // var options = {
-  //   hasNumber : window.confirm(`Would you like to include a number?`),
-  //   hasUppercase : window.confirm(`Would you like to include upper case letters?`),
-  //   hasLowercase : window.confirm(`Would you like to include lower case letters?`),
-  //   hasSymbol : window.confirm(`Would you like to include a symbol?`)
-  // };
-  // if(options.hasLowercase === false && options.hasUppercase === false && options.hasNumber === false && options.hasSymbol === false)
 
  //array 
 let upper = confirm("Would you like to include uppercase letters?");
@@ -68,6 +50,10 @@ function randomNumber(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+//build a string for random numbers & return it
+
 
 // Write password to the #password input
 function writePassword() {
