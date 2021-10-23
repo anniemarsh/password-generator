@@ -1,9 +1,11 @@
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
 
+let totalLength;
+
 //generate password
 function generatePassword() {
-  const totalLength = prompt("How many characters would you like to use?");
+  totalLength = prompt("How many characters would you like to use?");
   if(totalLength >= 8 && totalLength <= 128) {
     alert(`Your new password will be ${totalLength} characters long.`);
   }
