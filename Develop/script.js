@@ -31,7 +31,6 @@ if (number) {
   allChars += "123456789";
 }
 
-//generate pw that matches selected criteria
 //create loop to iterate over the chosen characters
 
 //return the generated password
@@ -53,7 +52,19 @@ function randomNumber(min, max) {
 
 
 //build a string for random numbers & return it
+const characters ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@%+\\/!#$^?:,)(}{][~-_0123456789';"
 
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
+
+console.log(generateString(totalLength));
 
 // Write password to the #password input
 function writePassword() {
