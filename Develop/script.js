@@ -44,14 +44,17 @@ if (number) {
   console.log(num)
   var num2 = allChars.charAt(num)
   console.log(num2)
+
+  //not sure if this is the right return?
+  return password;
 }
 
 function randomNumber(min, max) { 
   min = Math.ceil(min);
   max = Math.floor(max);
+
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 
 //build a string for random numbers & return it
 const characters ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@%+\\/!#$^?:,)(}{][~-_0123456789';"
@@ -75,6 +78,7 @@ function writePassword() {
 
   passwordText.value = password;
 
+  //does this need a return?
 }
 
 // Add event listener to generate button
