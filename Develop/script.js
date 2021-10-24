@@ -23,3 +23,11 @@ let randomPassword = "";
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function generatePassword() {
+  let passwordLength = prompt("Please enter your desired password character count between 8 - 128 characters.");
+  if (!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
+  return alert("Your password must be between 8 -128 characters. Please enter a valid count.");
+  }
+
+}
