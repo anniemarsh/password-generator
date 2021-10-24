@@ -52,6 +52,8 @@ function generatePassword() {
   }
 
   let randomPassword = " ";
+
+  //for loop
   for (let i = 0; i < passwordLength; i++) {
   randomPassword += masterArray[Math.floor(Math.random() * (masterArray.length))];
   console.log(Math.floor(Math.random() * (masterArray.length)));
